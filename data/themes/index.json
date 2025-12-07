@@ -1,0 +1,51 @@
+[
+  {
+    "id": "default",
+    "name": "Default", 
+    "author": "Linktree",
+    "description": "Tema por defecto estilo Linktree",
+    "version": "1.0.0"
+  },
+  {
+    "id": "pepsi",
+    "name": "Pepsi (Vibrant)",
+    "author": "PepsiCo",
+    "description": "Tema vibrante inspirado en los colores rojo, blanco y azul de Pepsi.",
+    "version": "2.0.0"
+  },
+  {
+    "id": "malta-polar",
+    "name": "Malta Polar",
+    "author": "Empresas Polar",
+    "description": "Tema energético inspirado en la malta venezolana.",
+    "version": "1.0.0"
+  },
+  {
+    "id": "7up",
+    "name": "7Up",
+    "author": "Keurig Dr Pepper / PepsiCo",
+    "description": "Tema cítrico y refrescante inspirado en las burbujas de limón.",
+    "version": "1.0.0"
+  },
+  {
+    "id": "carorena",
+    "name": "Caroreña",
+    "author": "Bodegas Pomar / Polar",
+    "description": "Tema frutal y festivo inspirado en la sangría venezolana.",
+    "version": "1.0.0"
+  },
+  {
+    "id": "polar",
+    "name": "Cerveza Polar",
+    "author": "Empresas Polar",
+    "description": "Tema dual: Refrescura Light vs Tradición Pilsen.",
+    "version": "1.0.0"
+  },
+  {
+    "id": "solera",
+    "name": "Solera Premium",
+    "author": "Empresas Polar",
+    "description": "Elegancia Premium: Verde Clásica de día, Azul Light de noche.",
+    "version": "1.0.0"
+  }
+]

@@ -1,0 +1,89 @@
+{
+  "id": "default",
+  "name": "Default Theme",
+  "author": "Sistema",
+  "description": "Tema por defecto con gradientes modernos y estructura definida",
+  "version": "3.0.0",
+  "structure": {
+    "layout": "list",
+    "avatarShape": "circle",
+    "socialButtons": {
+      "enabled": true,
+      "draggable": false,
+      "style": "rounded",
+      "size": "medium",
+      "position": "top"
+    }
+  },
+  "light": {
+    "colors": {
+      "primary": "#1A1A1A",
+      "secondary": "#6366F1",
+      "accent": "#8B5CF6",
+      "background": "#FFFFFF",
+      "text": "#1A1A1A",
+      "textSecondary": "#64748B",
+      "textMuted": "#94A3B8",
+      "success": "#10B981",
+      "error": "#EF4444",
+      "warning": "#F59E0B",
+      "border": "#E2E8F0"
+    },
+    "backgrounds": {
+      "page": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+      "card": "rgba(255, 255, 255, 0.95)",
+      "button": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+      "buttonHover": "linear-gradient(135deg, #5568d3 0%, #63408a 100%)"
+    },
+    "shadows": {
+      "card": "0 4px 20px rgba(102, 126, 234, 0.15)",
+      "cardHover": "0 8px 30px rgba(102, 126, 234, 0.25)",
+      "button": "0 4px 15px rgba(102, 126, 234, 0.3)"
+    },
+    "borders": {
+      "radius": "16px",
+      "width": "1px"
+    }
+  },
+  "dark": {
+    "colors": {
+      "primary": "#F8FAFC",
+      "secondary": "#818CF8",
+      "accent": "#A78BFA",
+      "background": "#0F172A",
+      "text": "#F8FAFC",
+      "textSecondary": "#94A3B8",
+      "textMuted": "#64748B",
+      "success": "#10B981",
+      "error": "#EF4444",
+      "warning": "#F59E0B",
+      "border": "#1E293B"
+    },
+    "backgrounds": {
+      "page": "linear-gradient(135deg, #1e3a8a 0%, #312e81 100%)",
+      "card": "rgba(30, 41, 59, 0.8)",
+      "button": "linear-gradient(135deg, #818cf8 0%, #a78bfa 100%)",
+      "buttonHover": "linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)"
+    },
+    "shadows": {
+      "card": "0 4px 20px rgba(0, 0, 0, 0.5)",
+      "cardHover": "0 8px 30px rgba(129, 140, 248, 0.3)",
+      "button": "0 4px 15px rgba(129, 140, 248, 0.5)"
+    },
+    "borders": {
+      "radius": "16px",
+      "width": "1px"
+    }
+  },
+  "joinButton": {
+    "alwaysVisible": false,
+    "draggable": true,
+    "position": "static",
+    "defaultPosition": { "x": 200, "y": 600 }
+  },
+  "sensitiveContent": {
+    "warningText": "Este perfil podría contener material sensible. ¿Deseas proceder?",
+    "continueText": "Confirmar acceso",
+    "cancelText": "Regresar"
+  }
+}

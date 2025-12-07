@@ -1,0 +1,87 @@
+{
+  "id": "polar",
+  "name": "Cerveza Polar (Refined)",
+  "author": "Empresas Polar",
+  "description": "Modo Claro: Tono 'Champagne' suave (Cerveza Light). Modo Oscuro: Noche Azul.",
+  "version": "2.3.0",
+  "structure": {
+    "layout": "list",
+    "avatarShape": "banner",
+    "socialButtons": {
+      "enabled": true,
+      "draggable": false,
+      "style": "circles",
+      "size": "small",
+      "position": "bottom"
+    }
+  },
+  "light": {
+    "colors": {
+      "primary": "#00AEEF",
+      "secondary": "#0057B8",
+      "accent": "#004B87",
+      "background": "#FFFAEC",
+      "text": "#002D5A",
+      "textSecondary": "#0057B8",
+      "textMuted": "#607D8B",
+      "border": "rgba(0, 174, 239, 0.3)",
+      "success": "#10B981",
+      "error": "#EF4444",
+      "warning": "#F59E0B"
+    },
+    "backgrounds": {
+      "page": "linear-gradient(rgba(255, 249, 196, 0.6), rgba(255, 245, 157, 0.4)), url('fondos/polar04.mp4') no-repeat center top / cover fixed",
+      "card": "rgba(240, 248, 255, 0.5)",
+      "button": "linear-gradient(135deg, rgba(0, 174, 239, 0.85) 0%, rgba(0, 138, 201, 0.9) 100%)",
+      "buttonHover": "linear-gradient(135deg, #00C4FF 0%, #00AEEF 100%)"
+    },
+    "shadows": {
+      "card": "0 8px 32px rgba(0, 61, 165, 0.08), inset 0 0 0 1px rgba(255, 255, 255, 0.6)",
+      "cardHover": "0 12px 40px rgba(0, 174, 239, 0.15), inset 0 0 0 1px #00AEEF",
+      "button": "0 4px 15px rgba(0, 174, 239, 0.25)"
+    },
+    "borders": {
+      "radius": "24px",
+      "width": "1px"
+    }
+  },
+  "dark": {
+    "colors": {
+      "primary": "#FFFFFF",
+      "secondary": "#FFD700",
+      "accent": "#FFD700",
+      "background": "#002050",
+      "text": "#FFFFFF",
+      "textSecondary": "#FFD700",
+      "textMuted": "#A0C4E8",
+      "border": "rgba(255, 215, 0, 0.3)",
+      "success": "#10B981",
+      "error": "#EF4444",
+      "warning": "#FFD700"
+    },
+    "backgrounds": {
+      "page": "linear-gradient(rgba(0, 16, 40, 0.4), rgba(0, 16, 40, 0.6)), url('/fondos/polar03.webp') no-repeat center top / cover fixed",
+      "card": "rgba(0, 32, 80, 0.45)",
+      "button": "linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.05) 100%)",
+      "buttonHover": "linear-gradient(135deg, rgba(255, 215, 0, 0.2) 0%, rgba(255, 215, 0, 0.1) 100%)"
+    },
+    "shadows": {
+      "card": "0 8px 32px rgba(0, 0, 0, 0.6), inset 0 0 0 1px rgba(255, 215, 0, 0.15)",
+      "cardHover": "0 12px 40px rgba(0, 56, 147, 0.5), inset 0 0 0 1px rgba(255, 215, 0, 0.5)",
+      "button": "0 4px 20px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.3)"
+    },
+    "borders": {
+      "radius": "24px",
+      "width": "1px"
+    }
+  },
+  "joinButton": {
+    "draggable": true,
+    "position": "static"
+  },
+  "sensitiveContent": {
+    "warningText": "Contenido con el auténtico sabor a nosotros. Se recomienda discreción.",
+    "continueText": "Destápalo",
+    "cancelText": "Solo mirando"
+  }
+}

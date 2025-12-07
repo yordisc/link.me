@@ -1,0 +1,321 @@
+
+{
+  "profile": {
+    "username": "yordisc",
+    "displayName": "Yordis Cujar",
+    "bio": "Systems Administrator | Software Engineer | Cloud Engineer.",
+    "avatarUrl": "https://drive.google.com/file/d/1n4BCttecdwj7VPuNZxKCKRHHCjnLvyO5/view?usp=sharing",
+    "avatarImages": [
+      {
+        "id": "profile-pic",
+        "url": "https://u.pcloud.link/publink/show?code=XZSt5P5Z8lm61KqDwAjyrFA3ieYKBfhIDebV",
+        "alt": "Foto de Perfil"
+      },
+      {
+        "id": "grad-pic",
+        "url": "https://u.pcloud.link/publink/show?code=XZXxmM5ZzoPDziOInajtKDlgPwSzYyt3q6AV",
+        "alt": "Graduación"
+      }
+    ],
+    "theme": "random",
+    "settings": {
+      "backgroundImage": ""
+    },
+    "socialButtons": {
+      "enabled": true,
+      "draggable": true
+    },
+    "joinButton": {
+      "enabled": true,
+      "text": "Descargar mi CV",
+      "url": "https://u.pcloud.link/publink/show?code=XZB65P5ZfUX1FaiU4U7Ew6IywliACpxfyAky",
+      "backgroundColor": "#1A1A1A",
+      "textColor": "#FFFFFF",
+      "borderRadius": 50,
+      "visible": true,
+      "position": "static"
+    }
+  },
+  "links": [
+    {
+      "id": "phone",
+      "type": "normal",
+      "title": "Teléfono",
+      "url": "tel:+584124268267",
+      "visible": false,
+      "icon": "phone"
+    },
+    {
+      "id": "email",
+      "type": "normal",
+      "title": "Email",
+      "url": "mailto:yordiscujar@gmail.com",
+      "visible": false,
+      "icon": "email"
+    },
+    {
+      "id": "facebook",
+      "type": "normal",
+      "title": "Facebook",
+      "url": "https://www.facebook.com/yordiseleazar/",
+      "visible": false,
+      "icon": "facebook"
+    },
+    {
+      "id": "twitter",
+      "type": "normal",
+      "title": "X / Twitter",
+      "url": "https://x.com/yordiscujar",
+      "visible": false,
+      "icon": "twitter"
+    },
+    {
+      "id": "telegram",
+      "type": "normal",
+      "title": "Telegram",
+      "url": "https://t.me/jordim66",
+      "visible": false,
+      "icon": "telegram"
+    },
+    {
+      "id": "whatsapp",
+      "type": "normal",
+      "title": "WhatsApp",
+      "url": "https://wa.me/584124268267",
+      "visible": false,
+      "icon": "whatsapp"
+    },
+    {
+      "id": "discord",
+      "type": "normal",
+      "title": "Discord",
+      "url": "https://discordapp.com/users/284773406149443585",
+      "visible": false,
+      "icon": "discord"
+    },
+    {
+      "id": "tiktok",
+      "type": "normal",
+      "title": "TikTok",
+      "url": "https://www.tiktok.com/@yordiscujar",
+      "visible": false,
+      "icon": "tiktok"
+    },
+    {
+      "id": "snapchat",
+      "type": "normal",
+      "title": "Snapchat",
+      "url": "https://www.snapchat.com/add/yordisc?share_id=pOXnct78EdQ&locale=es-US",
+      "visible": false,
+      "icon": "snapchat"
+    },
+    {
+      "id": "youtube",
+      "type": "normal",
+      "title": "YouTube",
+      "url": "https://www.youtube.com/@YordisEleazarCujarMoreno",
+      "visible": false,
+      "icon": "youtube"
+    },
+    {
+      "id": "binance-pay",
+      "type": "normal",
+      "title": "Pagar con Binance",
+      "url": "https://drive.google.com/file/d/1h3oBsfV9LvFuHHXTnRBSP68cLVw7JOHS/view?usp=sharing#view",
+      "imageUrl": "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?w=500",
+      "visible": true,
+      "icon": "binance"
+    },
+    {
+"id": "linkedin-card",
+      "type": "embed",
+      "provider": "linkedin",
+      "title": "Perfil Profesional",
+      "url": "https://www.linkedin.com/in/yordiscujar/",
+      "shape": "square",
+      "visible": true,
+      "icon": "linkedin"
+    },
+    {
+      "id": "portfolio-dev",
+      "type": "normal",
+      "title": "Stack Overflow",
+      "url": "https://stackoverflow.com/users/19875787",
+      "visible": true,
+      "icon": "stackoverflow"
+    },
+    {
+      "id": "github-card",
+      "type": "embed",
+      "provider": "github",
+      "title": "Mis Repositorios",
+      "url": "https://github.com/yordisc",
+      "shape": "square",
+      "visible": true,
+      "icon": "github"
+    },
+    {
+      "id": "dailydev",
+      "type": "normal",
+      "title": "Mis lecturas en daily.dev",
+      "url": "https://dly.to/xX8DUefYred",
+      "visible": true,
+      "icon": "dailydev"
+    },
+    {
+      "id": "codepen",
+      "type": "normal",
+      "title": "CodePen Designs",
+      "url": "https://codepen.io/yordisc",
+      "visible": true,
+      "icon": "codepen"
+    },
+    {
+      "id": "leetcode",
+      "type": "square",
+      "title": "LeetCode",
+      "url": "https://leetcode.com/u/yordiscujar/",
+      "visible": true,
+      "icon": "leetcode",
+      "imageUrl": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=2069&auto=format&fit=crop"
+    },
+    {
+      "id": "hackerrank",
+      "type": "square",
+      "title": "HackerRank",
+      "url": "https://www.hackerrank.com/profile/yordiscujar",
+      "visible": true,
+      "icon": "hackerrank",
+      "imageUrl": "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXYzODk0NjR6OG14dG1kd3F0aHJmNzN5dDVkcDA0eWQ1YnNnZTFvMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/128Ygie2wLdH5m/giphy.gif?q=80&w=2070&auto=format&fit=crop"
+    },
+    {
+      "id": "freecodecamp",
+      "type": "normal",
+      "title": "Certificaciones FreeCodeCamp",
+      "url": "https://www.freecodecamp.org/yordisc",
+      "visible": true,
+      "icon": "freecodecamp"
+    },
+    {
+      "id": "udemy",
+      "type": "normal",
+      "title": "Mis Cursos Udemy",
+      "url": "https://www.udemy.com/user/yordis-cujar/",
+      "visible": true,
+      "icon": "udemy"
+    },
+    {
+      "id": "platzi",
+      "type": "normal",
+      "title": "Perfil de Platzi",
+      "url": "https://platzi.com/p/yordisc/",
+      "visible": true,
+      "icon": "platzi"
+    },
+    {
+      "id": "codigofacilito",
+      "type": "normal",
+      "title": "Código Facilito",
+      "url": "https://codigofacilito.com/usuarios/yordiscujar",
+      "visible": true,
+      "icon": "codigofacilito"
+    },
+    {
+      "id": "coddy",
+      "type": "normal",
+      "title": "Coddy Tech",
+      "url": "https://coddy.tech/user/5k0J5IxMhHhm6zHu2dP4PIDV7IG3",
+      "visible": true,
+      "icon": "coddy"
+    },
+    {
+      "id": "testautomationu",
+      "type": "normal",
+      "title": "Test Automation U",
+      "url": "https://testautomationu.applitools.com/me.html#yordisc",
+      "visible": true,
+      "icon": "testautomationu"
+    },
+    {
+      "id": "steam",
+      "type": "normal",
+      "title": "Steam",
+      "url": "https://steamcommunity.com/id/yordisc/",
+      "visible": false,
+      "icon": "steam",
+      "imageUrl": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop"
+    },
+    {
+      "id": "letterboxd-card",
+      "type": "embed",
+      "provider": "letterboxd",
+      "title": "Mis Películas",
+      "url": "https://boxd.it/6CetR",
+      "shape": "rectangular",
+      "visible": true,
+      "icon": "letterboxd"
+    },
+    {
+      "id": "spotify-live",
+      "type": "embed",
+      "provider": "spotify-bio",
+      "title": "Escuchando ahora...",
+      "url": "https://open.spotify.com/user/yordisc", 
+      "originalUrl": "284773406149443585",
+      "shape": "rectangular",
+      "visible": true,
+      "icon": "spotify"
+    },
+    {
+      "id": "reddit",
+      "type": "square",
+      "title": "Reddit",
+      "url": "https://www.reddit.com/user/yordiscujar/",
+      "visible": true,
+      "icon": "reddit",
+      "imageUrl": "https://cdn.dribbble.com/userupload/19883137/file/original-ba4a703db6f2e30d418357c190886b64.gif?q=80&w=1964&auto=format&fit=crop"
+    },
+    {
+      "id": "instagram",
+      "type": "normal",
+      "title": "Instagram",
+      "url": "https://www.instagram.com/yordiseleazar/",
+      "visible": true,
+      "icon": "instagram"
+    },
+    {
+      "id": "pinterest",
+      "type": "normal",
+      "title": "Pinterest",
+      "url": "https://pin.it/7mN2TGJbg",
+      "visible": false,
+      "icon": "pinterest"
+    },
+    {
+      "id": "vsco",
+      "type": "normal",
+      "title": "VSCO",
+      "url": "https://vsco.co/yordiscujar",
+      "visible": false,
+      "icon": "vsco"
+    },
+    {
+      "id": "amazon",
+      "type": "normal",
+      "title": "Mi Wishlist de Amazon",
+      "url": "https://www.amazon.com/hz/wishlist/ls/3CEDGWR4Z7Z09?ref_=wl_share",
+      "visible": true,
+      "icon": "amazon"
+    },
+    {
+      "id": "onlyfans-troll",
+      "type": "rectangular",
+      "title": "Exclusive Content",
+      "url": "https://youtu.be/dQw4w9WgXcQ?si=UE6NQaHzkpRKCC",
+      "visible": true,
+      "icon": "onlyfans",
+      "imageUrl": "https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?q=80&w=1974&auto=format&fit=crop",
+      "sensitive": true
+    }
+  ]
+}

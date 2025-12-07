@@ -1,0 +1,88 @@
+{
+  "id": "7up",
+  "name": "7Up (Vibrant)",
+  "author": "Keurig Dr Pepper / PepsiCo",
+  "description": "Diseño audaz con los colores de la lata: Esmeralda, Blanco y Lima.",
+  "version": "2.1.0",
+  "structure": {
+    "layout": "list",
+    "avatarShape": "banner",
+    "socialButtons": {
+      "enabled": true,
+      "draggable": true,
+      "style": "circles",
+      "size": "large",
+      "position": "bottom"
+    }
+  },
+  "light": {
+    "colors": {
+      "primary": "#006241",
+      "secondary": "#84BD00",
+      "accent": "#E81C24",
+      "background": "#FFFFFF",
+      "text": "#006241",
+      "textSecondary": "#4A7A65",
+      "textMuted": "#8FA998",
+      "border": "#D1E8DE",
+      "success": "#009B3A",
+      "error": "#E81C24",
+      "warning": "#F59E0B"
+    },
+    "backgrounds": {
+      "page": "linear-gradient(135deg, #009B3A 15%, #FFFFFF 40%, #FFFFFF 60%, #D6E035 90%)",
+      "card": "rgba(255, 255, 255, 0.92)",
+      "button": "linear-gradient(135deg, #009B3A 0%, #006241 100%)",
+      "buttonHover": "linear-gradient(135deg, #00B543 0%, #008532 100%)"
+    },
+    "shadows": {
+      "card": "0 8px 30px rgba(0, 155, 58, 0.15)",
+      "cardHover": "0 12px 40px rgba(0, 155, 58, 0.25)",
+      "button": "0 4px 20px rgba(0, 155, 58, 0.4)"
+    },
+    "borders": {
+      "radius": "24px",
+      "width": "1px"
+    }
+  },
+  "dark": {
+    "colors": {
+      "primary": "#F0FFF4",
+      "secondary": "#D6E035",
+      "accent": "#E81C24",
+      "background": "#002B18",
+      "text": "#F0FFF4",
+      "textSecondary": "#D6E035",
+      "textMuted": "#5C8A75",
+      "border": "#004C2F",
+      "success": "#009B3A",
+      "error": "#E81C24",
+      "warning": "#F59E0B"
+    },
+    "backgrounds": {
+      "page": "radial-gradient(circle at 50% 30%, #006241 0%, #002010 100%)",
+      "card": "rgba(0, 43, 24, 0.85)",
+      "button": "linear-gradient(135deg, #84BD00 0%, #009B3A 100%)",
+      "buttonHover": "linear-gradient(135deg, #D6E035 0%, #84BD00 100%)"
+    },
+    "shadows": {
+      "card": "0 4px 25px rgba(0, 0, 0, 0.6)",
+      "cardHover": "0 8px 35px rgba(132, 189, 0, 0.25)",
+      "button": "0 0 20px rgba(132, 189, 0, 0.5)"
+    },
+    "borders": {
+      "radius": "24px",
+      "width": "1px"
+    }
+  },
+  "joinButton": {
+    "draggable": true,
+    "position": "floating",
+    "defaultPosition": { "x": 85, "y": 85 }
+  },
+  "sensitiveContent": {
+    "warningText": "Contenido burbujeante. Mantenlo fresco y transparente.",
+    "continueText": "Subirle a la frescura",
+    "cancelText": "Quedarme chill"
+  }
+}

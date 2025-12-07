@@ -1,0 +1,92 @@
+{
+  "profile": {
+    "username": "maria",
+    "displayName": "María Creative",
+    "bio": "Diseñadora UX/UI 🎨 | Amante del café ☕ | Creando experiencias digitales únicas.",
+    "avatarUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+    "avatarImages": [
+      {
+        "id": "1",
+        "url": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+        "alt": "Foto profesional"
+      },
+      {
+        "id": "2",
+        "url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=764&q=80",
+        "alt": "Modo creativo"
+      }
+    ],
+    "theme": "carorena",
+    "settings": {
+      "backgroundImage": "https://images.unsplash.com/photo-1557683316-973673baf926?q=80&w=2029&auto=format&fit=crop",
+      "hideThemeButton": true
+    },
+    "socialButtons": {
+      "enabled": true,
+      "draggable": true
+    },
+    "joinButton": {
+      "enabled": true,
+      "text": "Descargar mi CV",
+      "url": "https://dribbble.com",
+      "backgroundColor": "#EA4C89",
+      "textColor": "#FFFFFF",
+      "borderRadius": 12,
+      "visible": true,
+      "position": "static"
+    }
+  },
+  "links": [
+    {
+      "id": "behance-project",
+      "type": "rectangular",
+      "title": "Último Proyecto: App de Finanzas",
+      "url": "https://www.behance.net/",
+      "visible": true,
+      "icon": "linkcustom",
+      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop"
+    },
+    {
+      "id": "instagram",
+      "type": "normal",
+      "title": "Sígueme en Instagram",
+      "url": "https://instagram.com",
+      "visible": true,
+      "icon": "instagram"
+    },
+    {
+      "id": "linkedin",
+      "type": "normal",
+      "title": "Conecta en LinkedIn",
+      "url": "https://linkedin.com",
+      "visible": true,
+      "icon": "linkedin"
+    },
+    {
+      "id": "design-course",
+      "type": "square",
+      "title": "Curso de Diseño",
+      "url": "https://domestika.org",
+      "visible": true,
+      "icon": "udemy",
+      "imageUrl": "https://images.unsplash.com/photo-1501504905252-473c47e087f8?q=80&w=1974&auto=format&fit=crop"
+    },
+    {
+      "id": "contact",
+      "type": "square",
+      "title": "Contáctame",
+      "url": "mailto:maria@example.com",
+      "visible": true,
+      "icon": "email",
+      "imageUrl": "https://images.unsplash.com/photo-1596524430615-b46476ddff6e?q=80&w=2070&auto=format&fit=crop"
+    },
+    {
+      "id": "spotify-playlist",
+      "type": "normal",
+      "title": "Mi Playlist para Diseñar 🎵",
+      "url": "https://spotify.com",
+      "visible": true,
+      "icon": "spotify"
+    }
+  ]
+}

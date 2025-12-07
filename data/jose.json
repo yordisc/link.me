@@ -1,0 +1,88 @@
+{
+  "profile": {
+    "username": "jose",
+    "displayName": "José García",
+    "bio": "Diseñador y desarrollador web",
+    "avatarUrl": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
+    "avatarImages": [
+      {
+        "id": "main",
+        "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
+        "alt": "Foto principal de perfil"
+      },
+      {
+        "id": "work",
+        "url": "https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=400&h=400&fit=crop",
+        "alt": "Trabajando en el portátil"
+      },
+      {
+        "id": "nature",
+        "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+        "alt": "En la naturaleza"
+      }
+    ],
+    "theme": "random",
+    "settings": {
+      "backgroundImage": "",
+      "cardBackground": "#ffffff",
+      "cardOpacity": 0.95,
+      "hideThemeButton": false
+    },
+    "joinButton": {
+      "enabled": true,
+      "text": "Únete a jose en Linktree",
+      "url": "https://linktree.com/join",
+      "backgroundColor": "#000000",
+      "textColor": "#ffffff"
+    }
+  },
+  "links": [
+    {
+      "id": "1",
+      "type": "normal",
+      "title": "Mi Portfolio",
+      "url": "https://portfolio-jose.com",
+      "icon": "portfolio",
+      "visible": true,
+      "styles": {
+        "backgroundColor": "#3b82f6",
+        "color": "white"
+      }
+    },
+    {
+      "id": "2",
+      "type": "square",
+      "title": "GitHub",
+      "url": "https://github.com/josegarcia",
+      "icon": "github",
+      "visible": true,
+      "styles": {
+        "backgroundColor": "#1f2937"
+      }
+    },
+    {
+      "id": "3",
+      "type": "rectangular",
+      "title": "LinkedIn",
+      "url": "https://linkedin.com/in/josegarcia",
+      "icon": "linkedin",
+      "visible": true,
+      "styles": {
+        "backgroundColor": "#0077b5"
+      }
+    },
+    {
+      "id": "4",
+      "type": "normal",
+      "title": "Contenido Premium 🔞",
+      "url": "https://onlyfans.com/example",
+      "sensitive": true,
+      "icon": "star",
+      "visible": true,
+      "styles": {
+        "backgroundColor": "#00AFF0",
+        "color": "white"
+      }
+    }
+  ]
+}

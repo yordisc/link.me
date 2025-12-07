@@ -1,0 +1,87 @@
+{
+  "id": "solera",
+  "name": "Solera Deluxe",
+  "author": "Empresas Polar",
+  "description": "Diseño cristalino.",
+  "version": "3.3.0",
+  "structure": {
+    "layout": "list",
+    "avatarShape": "circle",
+    "socialButtons": {
+      "enabled": false,
+      "draggable": false,
+      "style": "circles",
+      "size": "medium",
+      "position": "top"
+    }
+  },
+  "light": {
+    "colors": {
+      "primary": "#004B87",
+      "secondary": "#0288D1",
+      "accent": "#004B87",
+      "background": "#E1F5FE",
+      "text": "#002D52",
+      "textSecondary": "#0277BD",
+      "textMuted": "#546E7A",
+      "border": "rgba(0, 75, 135, 0.5)",
+      "success": "#10B981",
+      "error": "#EF4444",
+      "warning": "#F59E0B"
+    },
+    "backgrounds": {
+      "page": "linear-gradient(rgba(225, 245, 254, 0.4), rgba(225, 245, 254, 0.4)), url('fondos/polar01.mp4') no-repeat center center / cover fixed",
+      "card": "rgba(255, 255, 255, 0.35)",
+      "button": "linear-gradient(135deg, rgba(0, 75, 135, 0.85) 0%, rgba(0, 47, 85, 0.9) 100%)",
+      "buttonHover": "linear-gradient(135deg, #0069BC 0%, #004B87 100%)"
+    },
+    "shadows": {
+      "card": "0 8px 32px rgba(0, 75, 135, 0.15), inset 0 0 0 1px rgba(255, 255, 255, 0.2)",
+      "cardHover": "0 12px 40px rgba(0, 75, 135, 0.25), inset 0 0 0 1px #81D4FA",
+      "button": "0 8px 20px rgba(0, 75, 135, 0.25)"
+    },
+    "borders": {
+      "radius": "16px",
+      "width": "1px"
+    }
+  },
+  "dark": {
+    "colors": {
+      "primary": "#D4AF37",
+      "secondary": "#005826",
+      "accent": "#D4AF37",
+      "background": "#00220E",
+      "text": "#FDFEFE",
+      "textSecondary": "#D4AF37",
+      "textMuted": "#A5D6A7",
+      "border": "rgba(212, 175, 55, 0.4)",
+      "success": "#10B981",
+      "error": "#EF4444",
+      "warning": "#D4AF37"
+    },
+    "backgrounds": {
+      "page": "linear-gradient(rgba(0, 34, 14, 0.5), rgba(0, 15, 5, 0.6)), url('/fondos/polar02.webp') no-repeat center center / cover fixed",
+      "card": "rgba(0, 20, 10, 0.4)",
+      "button": "linear-gradient(180deg, rgba(0, 51, 17, 0.85) 0%, rgba(0, 31, 10, 0.9) 100%)",
+      "buttonHover": "linear-gradient(180deg, #004015 0%, #003311 100%)"
+    },
+    "shadows": {
+      "card": "0 8px 32px rgba(0, 0, 0, 0.6), inset 0 0 0 1px rgba(212, 175, 55, 0.15)",
+      "cardHover": "0 12px 50px rgba(0, 0, 0, 0.8), inset 0 0 0 1px #D4AF37",
+      "button": "0 4px 15px rgba(0, 0, 0, 0.5), 0 0 0 1px #D4AF37"
+    },
+    "borders": {
+      "radius": "12px",
+      "width": "1px"
+    }
+  },
+  "joinButton": {
+    "draggable": true,
+    "position": "static"
+  },
+  "sensitiveContent": {
+    "warningText": "Acceso restringido. Contenido reservado solo para gustos Premium.",
+    "continueText": "Experiencia Deluxe",
+    "cancelText": "No es mi estilo"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "id": "carorena",
+  "name": "Caroreña",
+  "author": "Bodegas Pomar / Polar",
+  "description": "Tema frutal y festivo inspirado en la sangría venezolana.",
+  "version": "1.1.0",
+  "structure": {
+    "layout": "grid",
+    "avatarShape": "banner",
+    "socialButtons": {
+      "enabled": true,
+      "draggable": true,
+      "style": "squares",
+      "size": "large",
+      "position": "top"
+    }
+  },
+  "light": {
+    "colors": {
+      "primary": "#7B1E28",
+      "secondary": "#FFA500",
+      "accent": "#560319",
+      "background": "#FFF9F5",
+      "text": "#560319",
+      "textSecondary": "#7B1E28",
+      "textMuted": "#9D5C63",
+      "border": "#E6CACE",
+      "success": "#84BD00",
+      "error": "#D32F2F",
+      "warning": "#FFA500"
+    },
+    "backgrounds": {
+      "page": "linear-gradient(135deg, #FFF5F5 0%, #FFF0E6 100%)",
+      "card": "rgba(255, 255, 255, 0.85)",
+      "button": "linear-gradient(135deg, #7B1E28 0%, #9E2A36 100%)",
+      "buttonHover": "linear-gradient(135deg, #560319 0%, #7B1E28 100%)"
+    },
+    "shadows": {
+      "card": "0 4px 20px rgba(123, 30, 40, 0.08)",
+      "cardHover": "0 8px 25px rgba(123, 30, 40, 0.15)",
+      "button": "0 4px 15px rgba(123, 30, 40, 0.3)"
+    },
+    "borders": {
+      "radius": "18px",
+      "width": "1px"
+    }
+  },
+  "dark": {
+    "colors": {
+      "primary": "#F8FAFC",
+      "secondary": "#FFA500",
+      "accent": "#FFA500",
+      "background": "#2D010B",
+      "text": "#F8FAFC",
+      "textSecondary": "#E0C0C3",
+      "textMuted": "#9E6B71",
+      "border": "#560319",
+      "success": "#84BD00",
+      "error": "#EF4444",
+      "warning": "#FFA500"
+    },
+    "backgrounds": {
+      "page": "radial-gradient(circle at top center, #560319 0%, #2D010B 100%)",
+      "card": "rgba(86, 3, 25, 0.6)",
+      "button": "linear-gradient(135deg, #9E2A36 0%, #C23542 100%)",
+      "buttonHover": "linear-gradient(135deg, #B5303D 0%, #D94E5C 100%)"
+    },
+    "shadows": {
+      "card": "0 4px 20px rgba(0, 0, 0, 0.5)",
+      "cardHover": "0 8px 30px rgba(158, 42, 54, 0.25)",
+      "button": "0 4px 20px rgba(158, 42, 54, 0.4)"
+    },
+    "borders": {
+      "radius": "18px",
+      "width": "1px"
+    }
+  },
+  "joinButton": {
+    "draggable": true,
+    "position": "footer",
+    "alwaysVisible": true
+  },
+  "sensitiveContent": {
+    "warningText": "Advertencia: Altos niveles de sabor y buena vibra detectados.",
+    "continueText": "Unirse a la fiesta",
+    "cancelText": "Prefiero algo suave"
+  }
+}

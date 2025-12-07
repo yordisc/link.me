@@ -1,0 +1,88 @@
+{
+  "id": "pepsi",
+  "name": "Pepsi (Vibrant)",
+  "author": "PepsiCo",
+  "description": "Tema vibrante inspirado en los colores rojo, blanco y azul de Pepsi.",
+  "version": "2.1.0",
+  "structure": {
+    "layout": "grid",
+    "avatarShape": "circle",
+    "socialButtons": {
+      "enabled": true,
+      "draggable": false,
+      "style": "circles",
+      "size": "medium",
+      "position": "both"
+    }
+  },
+  "light": {
+    "colors": {
+      "primary": "#0F1D4A",
+      "secondary": "#004B93",
+      "accent": "#E61D2B",
+      "background": "#FFFFFF",
+      "text": "#0F1D4A",
+      "textSecondary": "#004B93",
+      "textMuted": "#64748B",
+      "border": "#E0E0E0",
+      "success": "#10B981",
+      "error": "#EF4444",
+      "warning": "#F59E0B"
+    },
+    "backgrounds": {
+      "page": "linear-gradient(135deg, #E61D2B 25%, #FFFFFF 50%, #004B93 75%)",
+      "card": "rgba(255, 255, 255, 0.92)",
+      "button": "#E61D2B",
+      "buttonHover": "#C21A25"
+    },
+    "shadows": {
+      "card": "0 6px 25px rgba(0, 75, 147, 0.15)",
+      "cardHover": "0 10px 35px rgba(0, 75, 147, 0.2)",
+      "button": "0 4px 15px rgba(230, 29, 43, 0.35)"
+    },
+    "borders": {
+      "radius": "20px",
+      "width": "1px"
+    }
+  },
+  "dark": {
+    "colors": {
+      "primary": "#F8FAFC",
+      "secondary": "#4A90E2",
+      "accent": "#E61D2B",
+      "background": "#0A142A",
+      "text": "#F8FAFC",
+      "textSecondary": "#BDCADB",
+      "textMuted": "#64748B",
+      "border": "#1E293B",
+      "success": "#10B981",
+      "error": "#EF4444",
+      "warning": "#F59E0B"
+    },
+    "backgrounds": {
+      "page": "radial-gradient(circle, #0053A0 0%, #002D5A 100%)",
+      "card": "rgba(15, 23, 42, 0.85)",
+      "button": "linear-gradient(135deg, #E61D2B 0%, #C21A25 100%)",
+      "buttonHover": "linear-gradient(135deg, #FF2D3B 0%, #E61D2B 100%)"
+    },
+    "shadows": {
+      "card": "0 4px 20px rgba(0, 0, 0, 0.6)",
+      "cardHover": "0 8px 30px rgba(0, 83, 160, 0.4)",
+      "button": "0 4px 20px rgba(230, 29, 43, 0.5)"
+    },
+    "borders": {
+      "radius": "20px",
+      "width": "1px"
+    }
+  },
+  "joinButton": {
+    "draggable": false,
+    "position": "footer",
+    "alwaysVisible": true
+  },
+  "sensitiveContent": {
+    "warningText": "El contenido a continuación tiene exceso de ritmo. ¿Tienes sed de más?",
+    "continueText": "Atrévete a ver",
+    "cancelText": "Pausar el ritmo"
+  }
+}
