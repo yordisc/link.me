@@ -1,4 +1,4 @@
-# 🌲 LinkTree Clone - Plataforma Avanzada de Enlaces en Bio
+# 🌲 Link.Me Clone - Plataforma Avanzada de Enlaces en Bio
 
 [![React](https://img.shields.io/badge/React-19.1-61dafb?logo=react)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178c6?logo=typescript)](https://www.typescriptlang.org/)
