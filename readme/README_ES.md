@@ -1,10 +1,10 @@
 <div align="center">
-  <p>
-    <a href="../README.md">🇺🇸 English</a> |
-    <strong>🇪🇸 Español</strong> |
-    <a href="./README_IT.md">🇮🇹 Italiano</a>
-  </p>
+  <a href="../README.md">🇺🇸 English</a> |
+  <strong>🇪🇸 Español</strong> |
+  <a href="./README_IT.md">🇮🇹 Italiano</a>
 </div>
+
+<br />
 
 # 🌲 Link.Me Clone - Plataforma Avanzada de Enlaces en Bio
 
@@ -116,6 +116,11 @@ Motor de resolución de enlaces que permite usar servicios de almacenamiento en 
   - **Videos:** Usa el parámetro `#video` al final de la URL para forzar modo reproductor
 - **pCloud, Dropbox, Reddit:** Extracción directa de medios
 
+**Ventajas:**
+- Detección automática del tipo de archivo (imagen/video)
+- No necesitas generar enlaces de descarga directa manualmente
+- Optimización automática de carga
+
 ### 🎭 **Animaciones y Efectos UI/UX**
 
 #### **📜 Marquesina de Texto (Auto-Scroll)**
@@ -129,8 +134,27 @@ Cuando hay más de 4 iconos sociales, la barra se convierte automáticamente en 
 - Hover effects elegantes
 - Micro-interacciones que mejoran la experiencia
 
+### 🔀 **Drag & Drop (Opcional)**
+Funcionalidad de arrastrar y soltar para:
+- Reordenar enlaces en tiempo real
+- Reorganizar botones sociales
+- Posicionar el botón "Join" (Únete/Suscríbete)
+- Cambios se mantienen durante la sesión
+
 ### 🛡️ **ContentGuard™ - Sistema Anti-AdBlock**
-Sistema de protección de monetización avanzado que detecta bloqueadores de publicidad (uBlock Origin, AdGuard, AdBlock Plus) mediante múltiples técnicas.
+Sistema de protección de monetización avanzado que detecta bloqueadores de publicidad (uBlock Origin, AdGuard, AdBlock Plus) mediante múltiples técnicas:
+
+**Métodos de Detección:**
+1. **Trampa de Cebo Local:** Intenta cargar archivos típicamente bloqueados (`ads.js`, `prebid.js`)
+2. **Trampa de Red:** Verifica conexión con servidores de anuncios reales
+3. **Trampa Cosmética (DOM):** Detecta si elementos con clases como `.adsbox` son ocultados por el navegador
+
+**Características:**
+- Código ofuscado para evitar detección por listas de filtros
+- Nombres de componentes y variables protegidos
+- Espacios preparados para Google AdSense con validación de seguridad
+
+*⚠️ Nota: En modo desarrollo (`npm run dev`), el bloqueo puede estar desactivado para facilitar la programación.*
 
 ### 💰 **Sistema de Monetización**
 - Integración con Google AdSense
@@ -182,9 +206,13 @@ La plataforma incluye experiencias interactivas ocultas o activables:
 
 #### **🏃 Pepsiman Runner**
 Un juego estilo "Endless Runner" integrado directamente en la aplicación.
+- Componentes personalizados (Obstáculos, Game Over screen).
+- Integración fluida con el tema visual.
 
 #### **💻 Modo Terminal**
 Una consola de línea de comandos interactiva (`src/components/Games/Terminal`) para usuarios avanzados o como portafolio para desarrolladores backend.
+- Soporte para comandos personalizados.
+- Navegación basada en texto.
 
 ### **Utilidades Core**
 - **@dnd-kit (core 6.3.1 + sortable 10.0.0)** - Sistema completo Drag & Drop
@@ -202,6 +230,14 @@ Una consola de línea de comandos interactiva (`src/components/Games/Terminal`) 
 ### **Analytics y Tracking**
 - **react-ga4 2.1.0** - Google Analytics 4 integration
 
+### **Herramientas de Desarrollo**
+- **Vite Plugin PWA 1.1.0** - Configuración PWA automática
+- **Vitest 4.0.8** - Framework de testing ultra-rápido
+- **Storybook 10.0.5** - Desarrollo aislado de componentes
+- **ESLint 9.36.0** + **Prettier 3.6.2** - Linting y formateo
+- **TypeScript ESLint 8.45.0** - Reglas específicas TS
+- **gh-pages 6.3.0** - Despliegue automatizado
+
 ---
 
 ## 📦 Instalación y Uso Local
@@ -217,7 +253,7 @@ Una consola de línea de comandos interactiva (`src/components/Games/Terminal`) 
 ```bash
 git clone [https://github.com/yordisc/link.me-source.git](https://github.com/yordisc/link.me-source.git)
 cd link.me
-`````
+````
 
 #### **2. Instalar Dependencias**
 
@@ -241,7 +277,13 @@ npm run build
 
 Los archivos compilados estarán en la carpeta `dist/`
 
----
+#### **5. Vista Previa de Producción**
+
+```bash
+npm run preview
+```
+
+-----
 
 ## ⚙️ Configuración de Perfil (JSON)
 
@@ -260,10 +302,33 @@ Crea un archivo con tu nombre de usuario: `public/data/jose.json`
     "displayName": "José Developer",
     "bio": "Frontend Dev | Creator | Tech Enthusiast 🚀",
     "avatarUrl": "[https://tu-cdn.com/avatar.jpg](https://tu-cdn.com/avatar.jpg)",
+    "avatarImages": [
+      {
+        "id": "main",
+        "url": "[https://tu-cdn.com/avatar.jpg](https://tu-cdn.com/avatar.jpg)",
+        "alt": "Perfil Principal"
+      },
+      {
+        "id": "fun",
+        "url": "[https://tu-cdn.com/avatar-fun.jpg](https://tu-cdn.com/avatar-fun.jpg)",
+        "alt": "Modo Divertido"
+      }
+    ],
     "theme": "pepsi",
+    "settings": {
+      "backgroundImage": "/videos/fondo.mp4",
+      "hideThemeButton": false
+    },
     "socialButtons": {
       "enabled": true,
       "draggable": true
+    },
+    "joinButton": {
+      "enabled": true,
+      "text": "Suscríbete",
+      "url": "[https://newsletter.com](https://newsletter.com)",
+      "backgroundColor": "#000000",
+      "textColor": "#FFFFFF"
     }
   },
   "links": [
@@ -274,14 +339,453 @@ Crea un archivo con tu nombre de usuario: `public/data/jose.json`
       "url": "[https://miweb.com](https://miweb.com)",
       "visible": true,
       "icon": "linkcustom"
+    },
+    {
+      "id": "instagram",
+      "type": "normal",
+      "title": "Instagram",
+      "url": "[https://instagram.com/tu_usuario](https://instagram.com/tu_usuario)",
+      "visible": true,
+      "icon": "instagram"
     }
   ]
 }
 ```
 
-_Para ver la lista completa de tipos de enlaces y ejemplos detallados, consulta el código fuente o la documentación extendida._
+-----
 
----
+## 🔗 Tipos de Enlaces y Ejemplos
+
+### **1. Botón Normal (Standard)**
+
+Botón estándar con icono y texto. Ideal para enlaces generales.
+
+```json
+{
+  "id": "portfolio",
+  "type": "normal",
+  "title": "Mi Portafolio Web",
+  "url": "[https://miweb.com](https://miweb.com)",
+  "icon": "globe",
+  "visible": true,
+  "styles": {
+    "backgroundColor": "#3b82f6",
+    "color": "white"
+  }
+}
+```
+
+**Iconos disponibles:** `instagram`, `twitter`, `facebook`, `linkedin`, `github`, `youtube`, `tiktok`, `spotify`, `globe`, `mail`, `phone`, `linkcustom`, etc.
+
+-----
+
+### **2. Botón Cuadrado (Square)**
+
+Botón compacto con imagen de fondo. Perfecto para diseños tipo grid.
+
+```json
+{
+  "id": "proyecto1",
+  "type": "square",
+  "title": "Proyecto E-commerce",
+  "url": "[https://proyecto.com](https://proyecto.com)",
+  "imageUrl": "[https://cdn.com/proyecto-thumbnail.jpg](https://cdn.com/proyecto-thumbnail.jpg)",
+  "visible": true
+}
+```
+
+-----
+
+### **3. Botón Rectangular (Banner)**
+
+Botón ancho tipo banner con imagen destacada. Ideal para contenido destacado.
+
+```json
+{
+  "id": "destacado",
+  "type": "rectangular",
+  "title": "🚀 Proyecto Destacado 2024",
+  "url": "[https://proyecto-grande.com](https://proyecto-grande.com)",
+  "imageUrl": "[https://cdn.com/banner-proyecto.jpg](https://cdn.com/banner-proyecto.jpg)",
+  "visible": true
+}
+```
+
+-----
+
+### **4. Embed de YouTube**
+
+Incrusta videos, shorts o transmisiones en vivo directamente en tu perfil.
+
+```json
+{
+  "id": "video-tutorial",
+  "type": "embed",
+  "provider": "youtube",
+  "url": "[https://youtube.com/watch?v=VIDEO_ID](https://youtube.com/watch?v=VIDEO_ID)",
+  "shape": "rectangular",
+  "visible": true
+}
+```
+
+**Formatos soportados:**
+
+  - Videos: `https://youtube.com/watch?v=VIDEO_ID`
+  - Shorts: `https://youtube.com/shorts/VIDEO_ID`
+  - Lives: `https://youtube.com/live/VIDEO_ID`
+
+-----
+
+### **5. Embed de Spotify**
+
+Incrusta canciones, álbumes o playlists con reproductor nativo.
+
+```json
+{
+  "id": "mi-playlist",
+  "type": "embed",
+  "provider": "spotify",
+  "url": "[https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M](https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M)",
+  "shape": "rectangular",
+  "visible": true
+}
+```
+
+**Tipos soportados:**
+
+  - Canciones: `https://open.spotify.com/track/TRACK_ID`
+  - Álbumes: `https://open.spotify.com/album/ALBUM_ID`
+  - Playlists: `https://open.spotify.com/playlist/PLAYLIST_ID`
+
+-----
+
+### **6. Widget Spotify Live (Tiempo Real)**
+
+Muestra lo que estás escuchando EN VIVO mediante Lanyard + Discord.
+
+```json
+{
+  "id": "spotify-now-playing",
+  "type": "embed",
+  "provider": "spotify-bio",
+  "title": "🎵 Escuchando ahora mismo",
+  "url": "[https://open.spotify.com/user/TU_USUARIO_SPOTIFY](https://open.spotify.com/user/TU_USUARIO_SPOTIFY)",
+  "originalUrl": "TU_DISCORD_USER_ID",
+  "shape": "rectangular",
+  "visible": true
+}
+```
+
+**Configuración requerida:**
+
+1.  Conecta Spotify a tu cuenta de Discord
+2.  Mantén tu perfil de Discord público
+3.  Obtén tu Discord User ID
+4.  Reemplaza `TU_DISCORD_USER_ID` con tu ID real
+
+**Cómo obtener tu Discord User ID:**
+
+1.  Activa el Modo Desarrollador en Discord (Configuración → Avanzado)
+2.  Click derecho en tu perfil → Copiar ID
+
+-----
+
+### **7. Visor de Imágenes/QR con https://www.google.com/search?q=%23view**
+
+Abre imágenes en pantalla completa al hacer clic. Perfecto para códigos QR de pago.
+
+```json
+{
+  "id": "qr-binance",
+  "type": "square",
+  "title": "💳 Pagar con Binance",
+  "imageUrl": "[https://unsplash.com/crypto-preview.jpg](https://unsplash.com/crypto-preview.jpg)",
+  "url": "[https://drive.google.com/file/d/ID_DE_TU_QR/view?usp=sharing#view](https://drive.google.com/file/d/ID_DE_TU_QR/view?usp=sharing#view)",
+  "visible": true
+}
+```
+
+**Cómo funciona:**
+
+  - **`imageUrl`**: Imagen de portada bonita del botón (decorativa)
+  - **`url`** + **`#view`**: Imagen real que se abrirá en el visor (funcional)
+
+**Casos de uso:**
+
+  - QR de Binance Pay, Zelle, Bitcoin
+  - Certificados o diplomas
+  - Flyers de eventos
+  - Menús de restaurantes
+
+-----
+
+### **8. Videos desde Google Drive**
+
+Usa videos almacenados en Google Drive directamente.
+
+```json
+{
+  "id": "video-demo",
+  "type": "rectangular",
+  "title": "📹 Video Demo del Proyecto",
+  "url": "#",
+  "imageUrl": "[https://drive.google.com/file/d/ID_DEL_VIDEO/view?usp=sharing#video](https://drive.google.com/file/d/ID_DEL_VIDEO/view?usp=sharing#video)",
+  "visible": true
+}
+```
+
+**Importante:** Agrega `#video` al final de la URL de Google Drive para forzar el modo reproductor.
+
+-----
+
+### **9. Embed de TikTok**
+
+Incrusta videos de TikTok con reproductor nativo.
+
+```json
+{
+  "id": "tiktok-viral",
+  "type": "embed",
+  "provider": "tiktok",
+  "url": "[https://tiktok.com/@usuario/video/1234567890](https://tiktok.com/@usuario/video/1234567890)",
+  "shape": "square",
+  "visible": true
+}
+```
+
+-----
+
+### **10. Embed de Google Maps**
+
+Muestra tu ubicación o lugares importantes.
+
+```json
+{
+  "id": "mi-oficina",
+  "type": "embed",
+  "provider": "googlemaps",
+  "url": "[https://maps.google.com/?q=Latitude,Longitude](https://maps.google.com/?q=Latitude,Longitude)",
+  "shape": "rectangular",
+  "visible": true
+}
+```
+
+-----
+
+### **11. Embed de CodePen**
+
+Perfecto para desarrolladores: muestra tu código en vivo.
+
+```json
+{
+  "id": "demo-code",
+  "type": "embed",
+  "provider": "codepen",
+  "url": "[https://codepen.io/usuario/pen/PEN_ID](https://codepen.io/usuario/pen/PEN_ID)",
+  "shape": "rectangular",
+  "visible": true
+}
+```
+
+-----
+
+### **12. Smart Cards (Instagram, LinkedIn, Twitter, GitHub)**
+
+Para plataformas que bloquean iframes, se genera una tarjeta elegante con preview.
+
+```json
+{
+  "id": "linkedin-profile",
+  "type": "embed",
+  "provider": "linkedin",
+  "url": "[https://linkedin.com/in/tu-perfil](https://linkedin.com/in/tu-perfil)",
+  "shape": "normal",
+  "visible": true
+}
+```
+
+**Plataformas con Smart Cards:**
+
+  - Instagram
+  - LinkedIn
+  - Twitter (X)
+  - GitHub (repositorios)
+  - Letterboxd
+
+-----
+
+## 🎨 Sistema de Temas
+
+### **Temas Incluidos**
+
+| Tema | ID | Descripción |
+|------|-----|-------------|
+| **Default** | `default` | Tema moderno y limpio base |
+| **Pepsi** | `pepsi` | Azul y rojo, inspirado en la marca |
+| **7UP** | `7up` | Verde limón fresco y vibrante |
+| **Polar** | `polar` | Tonos fríos árticos |
+| **Malta Polar** | `malta-polar` | Calidez dorada nostálgica |
+| **Solera** | `solera` | Elegancia dorada premium |
+| **Carorena** | `carorena` | Diseño tropical playero |
+
+### **Aplicar un Tema**
+
+En tu archivo JSON de perfil:
+
+```json
+{
+  "profile": {
+    "theme": "pepsi"
+  }
+}
+```
+
+### **Crear tu Propio Tema**
+
+Crea un archivo en `public/data/themes/mi-tema.json`:
+
+```json
+{
+  "id": "mi-tema-personal",
+  "name": "Mi Tema Personalizado",
+  "structure": {
+    "layout": "grid",
+    "avatarShape": "circle",
+    "cardStyle": "elevated"
+  },
+  "light": {
+    "colors": {
+      "primary": "#6366f1",
+      "secondary": "#8b5cf6",
+      "accent": "#ec4899",
+      "background": "#ffffff",
+      "text": "#1f2937",
+      "textSecondary": "#6b7280",
+      "textMuted": "#9ca3af",
+      "border": "#e5e7eb"
+    },
+    "backgrounds": {
+      "page": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+      "card": "#ffffff"
+    },
+    "shadows": {
+      "card": "0 4px 6px -1px rgb(0 0 0 / 0.1)",
+      "cardHover": "0 20px 25px -5px rgb(0 0 0 / 0.1)"
+    },
+    "borders": {
+      "card": "1px solid #e5e7eb",
+      "button": "1px solid #d1d5db"
+    }
+  },
+  "dark": {
+    "colors": {
+      "primary": "#818cf8",
+      "secondary": "#a78bfa",
+      "accent": "#f472b6",
+      "background": "#111827",
+      "text": "#f9fafb",
+      "textSecondary": "#d1d5db",
+      "textMuted": "#9ca3af",
+      "border": "#374151"
+    },
+    "backgrounds": {
+      "page": "linear-gradient(135deg, #1e3a8a 0%, #7c3aed 100%)",
+      "card": "#1f2937"
+    },
+    "shadows": {
+      "card": "0 4px 6px -1px rgb(0 0 0 / 0.3)",
+      "cardHover": "0 20px 25px -5px rgb(0 0 0 / 0.3)"
+    },
+    "borders": {
+      "card": "1px solid #374151",
+      "button": "1px solid #4b5563"
+    }
+  }
+}
+```
+
+-----
+
+## 📍 Configuración de Redes Sociales
+
+Los iconos de redes sociales se generan automáticamente a partir de tu lista principal de `links` cuando el `icon` coincide con una red social conocida (instagram, twitter, github, etc.) y tienes `socialButtons.enabled: true`.
+
+```json
+"profile": {
+  "socialButtons": {
+    "enabled": true,
+    "draggable": true
+  }
+}
+```
+
+**Opciones de `style`:**
+
+  - **`circles`**: Iconos circulares (defecto)
+  - **`squares`**: Iconos cuadrados
+  - **`rounded`**: Iconos con bordes redondeados
+
+**Opciones de `position`:**
+
+  - **`top`**: Aparecen en la tarjeta de perfil, debajo de la bio
+  - **`bottom`**: Al final de la lista de enlaces, con separador
+  - **`both`**: En ambos lugares (útil para perfiles muy largos)
+
+**`draggable`:**
+
+  - **`true`**: Permite reordenar iconos con drag & drop
+  - **`false`**: Orden fijo
+
+### **Carrusel Automático**
+
+Cuando hay más de 4 iconos sociales, la barra se convierte automáticamente en una **cinta deslizante** con scroll horizontal fluido.
+
+-----
+
+## 📂 Estructura del Proyecto
+
+```bash
+link.me/
+│
+├── public/
+│   ├── data/
+│   │   ├── themes/       # Temas JSON (default, etc.)
+│   │   ├── yordisc.json         # Perfiles de usuario
+│   │   ├── jose.json
+│   │   └── maria.json
+│   └── fondos/                  # Recursos multimedia
+│
+├── src/
+│   ├── components/
+│   │   ├── ads/              # Sistema de monetización
+│   │   │   ├── AdSenseUnit.tsx
+│   │   │   ├── ContentGuard.tsx # Sistema Anti-AdBlock
+│   │   │   └── FloatingAdSidebars.tsx
+│   │   ├── avatar/              # Avatar y visor
+│   │   │   ├── AvatarViewer.tsx
+│   │   │   └── EnhancedAvatar.tsx
+│   │   ├── buttons/             # Componentes de botones
+│   │   │   ├── NormalButton.tsx
+│   │   │   ├── SquareButton.tsx
+│   │   │   ├── RectangularButton.tsx
+│   │   │   ├── SocialButtons.tsx
+│   │   │   ├── ...
+│   │   │   └── Terminal/        # Consola interactiva
+│   │   ├── widgets/             # Widgets externos
+│   │   │   └── SpotifyWidget.tsx
+│   │   └── Layout/              # Estructura base
+│   │
+│   ├── contexts/   # Gestión de estado (ThemeContext)
+│   ├── hooks/      # Custom Hooks (useLanyard, etc)
+│   ├── utils/                   # Utilidades (crypto.ts)
+│   └── types/      # Definiciones TypeScript
+│
+├── package.json
+├── vite.config.ts
+└── tailwind.config.js
+```
+
+-----
 
 ## 🚀 Despliegue
 
@@ -293,13 +797,136 @@ El proyecto está preconfigurado para desplegar en GitHub Pages con un solo coma
 npm run deploy
 ```
 
----
+**Proceso automático:**
+
+1.  Compila el proyecto (`npm run build`)
+2.  Sube la carpeta `dist/` a la rama `gh-pages`
+3.  GitHub Pages publica automáticamente
+
+**Tu sitio estará disponible en:**
+
+```
+[https://yordisc.github.io/link.me/](https://yordisc.github.io/link.me/)
+```
+
+**Configuración en `package.json`:**
+
+```json
+{
+  "homepage": "[https://yordisc.github.io/link.me](https://yordisc.github.io/link.me)",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist --repo [https://ghp_TOKEN@github.com/yordisc/link.me.git](https://ghp_TOKEN@github.com/yordisc/link.me.git)"
+  }
+}
+```
+
+-----
+
+## 🧪 Testing y Desarrollo
+
+### **Ejecutar Tests**
+
+```bash
+# Tests unitarios
+npm run test
+
+# Tests con interfaz visual
+npm run test:ui
+
+# Coverage report
+npm run test:coverage
+```
+
+### **Linting y Formateo**
+
+```bash
+# Ejecutar ESLint
+npm run lint
+
+# Formatear código con Prettier
+npm run format
+```
+
+-----
+
+### **Guías de Estilo**
+
+  - ✅ Usa **TypeScript** para todo el código nuevo
+  - ✅ Sigue las reglas de **ESLint** configuradas
+  - ✅ Escribe **tests unitarios** para funcionalidades críticas
+  - ✅ Documenta funciones complejas con **JSDoc**
+  - ✅ Usa **commits semánticos**:
+      - `feat:` Nueva característica
+      - `fix:` Corrección de bug
+      - `docs:` Cambios en documentación
+      - `style:` Formato, punto y coma faltante, etc.
+      - `refactor:` Refactorización de código
+      - `test:` Añadir tests
+      - `chore:` Actualizar dependencias, etc.
+
+### **Reportar Bugs**
+
+Si encuentras un bug, por favor [abre un issue](https://github.com/yordisc/link.me/issues) con:
+
+  - Descripción clara del problema
+  - Pasos para reproducirlo
+  - Comportamiento esperado vs. actual
+  - Screenshots si es posible
+  - Información del navegador/OS
+
+-----
 
 ## 📄 Licencia
 
 Distribuido bajo la **Licencia MIT**. Ver archivo `LICENSE` para más información.
 
----
+Esto significa que puedes:
+
+  - ✅ Usar comercialmente
+  - ✅ Modificar el código
+  - ✅ Distribuir
+  - ✅ Uso privado
+
+Bajo las condiciones de:
+
+  - 📋 Incluir el aviso de copyright
+  - 📋 Incluir la licencia MIT
+
+-----
+
+## 🙏 Agradecimientos
+
+Este proyecto no sería posible sin estas increíbles herramientas y comunidades:
+
+  - **[React Team](https://react.dev/)** - Por la mejor librería de UI
+  - **[Vite](https://vitejs.dev/)** - Build tool ultra-rápido
+  - **[Tailwind CSS](https://tailwindcss.com/)** - Framework CSS que acelera el desarrollo
+  - **[React Icons](https://react-icons.github.io/)** - Miles de iconos listos para usar
+  - **[Framer Motion](https://www.framer.com/motion/)** - Animaciones fluidas y fáciles
+  - **[Lanyard API](https://github.com/Phineas/lanyard)** - Estado de Discord en tiempo real
+  - **[Unsplash](https://unsplash.com/)** - Imágenes de alta calidad gratuitas
+  - **Comunidad Open Source** - Por compartir conocimiento
+
+-----
+
+## 📞 Contacto y Soporte
+
+### **Creador**
+
+👨‍💻 **Yordisc**
+
+  - GitHub: [@yordisc](https://github.com/yordisc)
+  - Proyecto: [link.me](https://github.com/yordisc/link.me)
+
+### **Obtener Ayuda**
+
+  - 📖 [Documentación Completa](https://www.google.com/search?q=%23)
+  - 💬 [Discussions](https://github.com/yordisc/link.me/discussions)
+  - 🐛 [Reportar Bug](https://github.com/yordisc/link.me/issues)
+  - 💡 [Solicitar Feature](https://github.com/yordisc/link.me/issues/new?labels=enhancement)
+
+-----
 
 \<div align="center"\>
 
@@ -308,10 +935,10 @@ Distribuido bajo la **Licencia MIT**. Ver archivo `LICENSE` para más informaci�
 [](https://github.com/yordisc/link.me/stargazers)
 [](https://github.com/yordisc/link.me/network/members)
 
----
+-----
 
-**Creado con ☕ por [Yordisc](https://github.com/yordisc)**
+**Creado con  ☕ por [Yordisc](https://github.com/yordisc)**
 
-_"Un enlace a la vez, construyendo tu presencia digital perfecta"_
+*"Un enlace a la vez, construyendo tu presencia digital perfecta"*
 
 \</div\>
