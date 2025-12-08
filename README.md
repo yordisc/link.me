@@ -746,9 +746,7 @@ link.me/
 │   │   │   ├── SquareButton.tsx
 │   │   │   ├── RectangularButton.tsx
 │   │   │   ├── SocialButtons.tsx
-│   │   │   └── ...
-│   │   ├── Games/               # 🕹️ Gamificación
-│   │   │   ├── PepsimanRunner/  # Juego Runner
+│   │   │   ├── ...
 │   │   │   └── Terminal/        # Consola interactiva
 │   │   ├── widgets/             # Widgets externos
 │   │   │   └── SpotifyWidget.tsx
