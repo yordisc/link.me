@@ -836,10 +836,10 @@ Report dettagliati dell'ultima distribuzione sono disponibili al pubblico:
 
 :--- |:---: |:--- |
 
-**Prestazioni e SEO** | ![Lighthouse](https://img.shields.io/badge/-Lighthouse-F44B21?style=flat-square&logo=lighthouse&logoColor=white) | [🚀 **Visualizza report HTML**](https://yordisc.github.io/link.me-source/reports/performance/index.html) |
+**Prestazioni e SEO** | ![Lighthouse](https://img.shields.io/badge/-Lighthouse-F44B21?style=flat-square&logo=lighthouse&logoColor=white) | [🚀 **Visualizza report HTML**](https://yordisc.github.io/link.me/reports/performance/index.html) |
 
-**Test unitari** | ![Vitest](https://img.shields.io/badge/-Vitest-729B1B?style=flat-square&logo=vitest&logoColor=white) | [🧪 **Visualizza risultati JSON**](https://yordisc.github.io/link.me-source/reports/unit/vitest-results.json) |
-| **Test E2E** | ![Cypress](https://img.shields.io/badge/-Cypress-17202C?style=flat-square&logo=cypress&logoColor=white) | [🤖 **Visualizza dati grezzi**](https://yordisc.github.io/link.me-source/reports/e2e/cypress-summary.json) |
+**Test unitari** | ![Vitest](https://img.shields.io/badge/-Vitest-729B1B?style=flat-square&logo=vitest&logoColor=white) | [🧪 **Visualizza risultati JSON**](https://yordisc.github.io/link.me/reports/unit/vitest-results.json) |
+| **Test E2E** | ![Cypress](https://img.shields.io/badge/-Cypress-17202C?style=flat-square&logo=cypress&logoColor=white) | [🤖 **Visualizza dati grezzi**](https://yordisc.github.io/link.me/reports/e2e/cypress-summary.json) |
 
 > ℹ️ *Nota: questi report vengono rigenerati automaticamente nella cartella `/reports` del ramo `gh-pages` a ogni distribuzione riuscita.*
 
