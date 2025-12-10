@@ -1,3 +1,5 @@
+![CI Status](https://github.com/yordisc/link.me-source/actions/workflows/ci.yml/badge.svg)
+
 <div align="center">
   <a href="../README.md">🇺🇸 English</a> |
   <a href="./README_ES.md">🇪🇸 Español</a> |
@@ -824,20 +826,22 @@ npm run deploy
 
 -----
 
-## 🧪 Testing e Sviluppo
+## 🛡️ Garanzia di qualità e test
 
-### **Eseguire i Test**
+Questo progetto ha una pipeline di Integrazione Continua (CI) automatizzata che utilizza GitHub Actions. Ad ogni aggiornamento, vengono eseguiti audit delle prestazioni, test logici e simulazioni utente.
 
-```bash
-# Test unitari
-npm run test
+Report dettagliati dell'ultima distribuzione sono disponibili al pubblico:
 
-# Test con interfaccia visiva
-npm run test:ui
+| Audit | Strumento | Report in tempo reale |
 
-# Report di copertura
-npm run test:coverage
-```
+:--- |:---: |:--- |
+
+**Prestazioni e SEO** | ![Lighthouse](https://img.shields.io/badge/-Lighthouse-F44B21?style=flat-square&logo=lighthouse&logoColor=white) | [🚀 **Visualizza report HTML**](https://yordisc.github.io/link.me-source/reports/performance/index.html) |
+
+**Test unitari** | ![Vitest](https://img.shields.io/badge/-Vitest-729B1B?style=flat-square&logo=vitest&logoColor=white) | [🧪 **Visualizza risultati JSON**](https://yordisc.github.io/link.me-source/reports/unit/vitest-results.json) |
+| **Test E2E** | ![Cypress](https://img.shields.io/badge/-Cypress-17202C?style=flat-square&logo=cypress&logoColor=white) | [🤖 **Visualizza dati grezzi**](https://yordisc.github.io/link.me-source/reports/e2e/cypress-summary.json) |
+
+> ℹ️ *Nota: questi report vengono rigenerati automaticamente nella cartella `/reports` del ramo `gh-pages` a ogni distribuzione riuscita.*
 
 ### **Linting e Formattazione**
 
