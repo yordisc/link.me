@@ -806,12 +806,6 @@ npm run deploy
 2.  Uploads the `dist/` folder to the `gh-pages` branch.
 3.  GitHub Pages publishes automatically.
 
-**Your site will be available at:**
-
-```
-[https://yordisc.github.io/link.me/](https://yordisc.github.io/link.me/)
-```
-
 **Configuration in `package.json`:**
 
 ```json
@@ -836,7 +830,7 @@ Los reportes detallados del último despliegue están disponibles públicamente:
 | :--- | :---: | :--- |
 | **Performance & SEO** | ![Lighthouse](https://img.shields.io/badge/-Lighthouse-F44B21?style=flat-square&logo=lighthouse&logoColor=white) | [🚀 **Ver Reporte HTML**](https://yordisc.github.io/link.me/reports/performance/index.html) |
 | **Tests Unitarios** | ![Vitest](https://img.shields.io/badge/-Vitest-729B1B?style=flat-square&logo=vitest&logoColor=white) | [🧪 **Ver Resultados JSON**](https://yordisc.github.io/link.me/reports/unit/vitest-results.json) |
-| **Tests E2E** | ![Cypress](https://img.shields.io/badge/-Cypress-17202C?style=flat-square&logo=cypress&logoColor=white) | [🤖 **Ver Datos Raw**](https://yordisc.github.io/link.me/reports/e2e/cypress-summary.json) |
+| **Tests E2E** | ![Cypress](https://img.shields.io/badge/-Cypress-17202C?style=flat-square&logo=cypress&logoColor=white) | [📸 **Ver Reporte Visual**](https://yordisc.github.io/link.me/reports/e2e/index.html) |
 
 > ℹ️ *Nota: Estos reportes se regeneran automáticamente en la carpeta `/reports` de la rama `gh-pages` con cada deploy exitoso.*
 
