@@ -155,12 +155,12 @@
       "icon": "github"
     },
     {
-      "id": "dailydev",
+      "id": "microsoft-learn",
       "type": "normal",
-      "title": "Mis lecturas en daily.dev",
-      "url": "https://dly.to/xX8DUefYred",
+      "title": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/es-mx/users/yordisc",
       "visible": true,
-      "icon": "dailydev"
+      "icon": "microsftlearn"
     },
     {
       "id": "codepen",
