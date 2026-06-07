@@ -117,15 +117,6 @@
       "visible": false,
       "icon": "youtube"
     },
-    {
-      "id": "binance-pay",
-      "type": "normal",
-      "title": "Pagar con Binance",
-      "url": "https://drive.google.com/file/d/1h3oBsfV9LvFuHHXTnRBSP68cLVw7JOHS/view?usp=sharing#view",
-      "imageUrl": "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?w=500",
-      "visible": true,
-      "icon": "binance"
-    },
    {
 "id": "linkedin-card",
       "type": "embed",
@@ -135,6 +126,15 @@
       "shape": "square",
       "visible": true,
       "icon": "linkedin"
+    },
+    {
+      "id": "binance-pay",
+      "type": "normal",
+      "title": "Pagar con Binance",
+      "url": "https://drive.google.com/file/d/1h3oBsfV9LvFuHHXTnRBSP68cLVw7JOHS/view?usp=sharing#view",
+      "imageUrl": "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?w=500",
+      "visible": true,
+      "icon": "binance"
     },
     {
       "id": "github-card",
