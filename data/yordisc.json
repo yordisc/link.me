@@ -126,17 +126,7 @@
       "visible": true,
       "icon": "binance"
     },
-    {
-      "id": "letterboxd-card",
-      "type": "embed",
-      "provider": "letterboxd",
-      "title": "Mis Películas",
-      "url": "https://boxd.it/6CetR",
-      "shape": "rectangular",
-      "visible": true,
-      "icon": "letterboxd"
-    },
-    {
+   {
 "id": "linkedin-card",
       "type": "embed",
       "provider": "linkedin",
@@ -155,6 +145,16 @@
       "shape": "square",
       "visible": true,
       "icon": "github"
+    },
+    {
+      "id": "letterboxd-card",
+      "type": "embed",
+      "provider": "letterboxd",
+      "title": "Mis Películas",
+      "url": "https://boxd.it/6CetR",
+      "shape": "rectangular",
+      "visible": true,
+      "icon": "letterboxd"
     },
    {
       "id": "portfolio-dev",
