@@ -175,7 +175,7 @@
       "type": "square",
       "title": "LeetCode",
       "url": "https://leetcode.com/u/yordiscujar/",
-      "visible": true,
+      "visible": false,
       "icon": "leetcode",
       "imageUrl": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=2069&auto=format&fit=crop"
     },
@@ -184,7 +184,7 @@
       "type": "square",
       "title": "HackerRank",
       "url": "https://www.hackerrank.com/profile/yordiscujar",
-      "visible": true,
+      "visible": false,
       "icon": "hackerrank",
       "imageUrl": "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXYzODk0NjR6OG14dG1kd3F0aHJmNzN5dDVkcDA0eWQ1YnNnZTFvMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/128Ygie2wLdH5m/giphy.gif?q=80&w=2070&auto=format&fit=crop"
     },
@@ -225,7 +225,7 @@
       "type": "normal",
       "title": "Coddy Tech",
       "url": "https://coddy.tech/user/5k0J5IxMhHhm6zHu2dP4PIDV7IG3",
-      "visible": true,
+      "visible": false,
       "icon": "coddy"
     },
     {
