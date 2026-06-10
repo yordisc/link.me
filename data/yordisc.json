@@ -179,7 +179,7 @@
       "type": "normal",
       "title": "Stack Overflow",
       "url": "https://stackoverflow.com/users/19875787",
-      "visible": true,
+      "visible": false,
       "icon": "stackoverflow"
     },
     {
