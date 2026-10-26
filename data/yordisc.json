@@ -191,10 +191,10 @@
       "icon": "microsftlearn"
     },
     {
-      "id": "codepen",
+      "id": "retroachievements",
       "type": "normal",
-      "title": "CodePen Designs",
-      "url": "https://codepen.io/yordisc",
+      "title": "Retroachievements",
+      "url": "https://retroachievements.org/user/yordisc",
       "visible": true,
       "icon": "codepen"
     },
